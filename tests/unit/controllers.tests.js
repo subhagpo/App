@@ -193,7 +193,7 @@ describe('Controllers: FeedbackCtrl', function(){
             expect(scope.questions[scope.prev].Rating).toBeNull();
         })
     })
-/*
+    
     describe('detect shaking', function() {
         function _shakeSetup() {
             var result = { x: 1, y:2, z:3};
@@ -214,5 +214,4 @@ describe('Controllers: FeedbackCtrl', function(){
             expect(scope.submitSurvey).not.toHaveBeenCalled();
         })
     })
-*/ 
 });
