@@ -154,7 +154,7 @@ angular.module('starter.controllers', [])
             console.log("success");
         }, function (err) {
             console.log("error:" + err);
-        }, "8657034c4745497fb6dfc04194264957", true);
+        }, "5a7d33d3b8d14a779654af82bb8a181d", true);
 
         //force app crash
         hockeyapp.forceCrash();
