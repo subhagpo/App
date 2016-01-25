@@ -68,9 +68,9 @@
         <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
     </platform>
-    <plugin name="cordova-plugin-whitelist" spec="^1.2.0" />
-    <plugin name="cordova-plugin-inappbrowser" spec="^1.1.1" />
-    <plugin name="cordova-plugin-device-motion" spec="^1.2.0" />
+    <plugin name="cordova-plugin-whitelist" spec="1.2.0" />
+    <plugin name="cordova-plugin-inappbrowser" spec="1.1.1" />
+    <plugin name="cordova-plugin-device-motion" spec="1.2.0" />
     <plugin name="cordova-plugin-hockeyapp" spec="~2.0.0" />
     <plugin name="de.appplant.cordova.plugin.local-notification" spec="https://github.com/katzer/cordova-plugin-local-notifications.git" />
 </widget>
