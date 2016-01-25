@@ -1,0 +1,61 @@
+<ion-view view-title="Tilt your device to provide feedback">
+  <ion-content>
+    <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+        <ion-slide ng-repeat="question in questions track by $index">
+
+            <div class="card item item-body padding_vertical transparent">
+                <h3>Question {{$index + 1}}/{{questions.length}}: 
+                    <p><h2 style="font-size: 17px">{{question.$value}}</h2></p>
+                </h3>
+
+                <uib-progressbar max="max" animate="true" ng-hide="question.Rating" value="dynamic" type="{{type}}" style="height: 20px; margin-top: 25px"><span >{{dynamic}} / {{max}}</span></uib-progressbar>
+
+                <div class="item item-text-wrap item-icon-right transparent" style="margin-left: -15px" ng-show="question.Rating">
+                    <b>Your Rating:</b> <h1 ng-class="question.Rating > 5 ? 'balanced' : 'assertive'" style="margin: 0">{{question.Rating}} / {{max}}</h1>  
+                    <i class="icon ion-refresh icon-accessory" ng-click="rateAgain()"></i>
+                </div>
+                
+                <div class='feedbackform'>
+                    <div class='feedbackform_slide'>
+                        <img class='sb panda' src='img/hexback.svg'>
+                        <div class='grad panda'></div>
+                        <div class='feedbackform_slide__inner'>
+                            <div class='character'>
+                                <div class='character_image'>
+                                    <img src='img/panda.svg'>
+                                </div>
+                                <div class='character_smile'>
+                                    <div class='smiler_input'>
+                                        <input class='panda' max='20' min='0' type='range'>
+                                        <svg class='smile panda' height='20px' version='1.1' width='70px' xmlns='http://www.w3.org/2000/svg'>
+                                            <path d='M10 10 C 20 10, 40 10, 50 10' fill='transparent' stroke-linecap='round' stroke-width='4' stroke='black'></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class='rating panda'>
+                                <span>Average</span>
+                                <img ng-click="next()" class='next' src='img/greenbutton3.png'>
+                                <img ng-click="previous()"  class='prev' src='img/greenbutton4.png'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ion-slide>
+        <ion-slide>
+
+        <div class="list card">
+          <div class="item">
+            <h2><center>Shake device to submit responses</center></h2>
+          </div>
+          <div class="item item-image">
+            <img src='img/shake.gif'>
+          </div>
+        </div>
+
+        </ion-slide>
+    </ion-slide-box> 
+  </ion-content>
+</ion-view>
