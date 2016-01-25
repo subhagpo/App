@@ -22,13 +22,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', "
     } 
     
     // Register to hockey app
-    /*
+    
     hockeyapp.start(function() {
         console.log("success");
     }, function (err) {
         console.log("error:" + err);
-    }, "[HockeyAppID]", true);
-    */
+    }, "0266c81b31fd4c588f573718e0bf47eb", true);
         
   });   
 })
