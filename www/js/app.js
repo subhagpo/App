@@ -20,6 +20,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', "
       // org.apache.cordova.statusbar required
       StatusBar.styleLightContent();
     } 
+    
+    // Register to hockey app
+    /*
+    hockeyapp.start(function() {
+        console.log("success");
+    }, function (err) {
+        console.log("error:" + err);
+    }, "[HockeyAppID]", true);
+    */
+        
   });   
 })
 

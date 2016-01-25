@@ -150,24 +150,10 @@ angular.module('starter.controllers', [])
     });
 
     $scope.submitSurvey = function() {
-        /*
-        hockeyapp.start(function() {
-            console.log("success");
-        }, function (err) {
-            console.log("error:" + err);
-        }, "5a7d33d3b8d14a779654af82bb8a181d", true);
-        */
-        hockeyapp.start(function() {
-            console.log("success");
-            }, function (err) {
-                console.log("error:" + err);
-            }, '5a7d33d3b8d14a779654af82bb8a181d', true, true, hockeyapp.loginMode.ANONYMOUS, 
-            'cfcb11140f69af71ae3398f3eb3f5f5e');
+        // Simulate app crash
+        // hockeyapp.forceCrash();
 
-        //force app crash
-        hockeyapp.forceCrash();
-
-        /* uncomment code.
+        /* The real code.
         var send={};
 
         for(var i = 0; i < $scope.questions.length; i++) {

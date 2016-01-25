@@ -1,6 +1,6 @@
-describe('Define your Suite', function() {  
+describe('PheedBack App UI', function() {  
  
-    it('Define your Spec', function() {
+    it('FB Auth login', function() {
         // wait for the splash screen.
         browser.driver.sleep(7000);
         
