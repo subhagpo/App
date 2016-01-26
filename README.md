@@ -25,7 +25,7 @@ the feedback, the user simply shakes the phone.
     
     cordova/ionic/taco build/run/emulate [platform]
     
- ## Unit Testing the application - 
+## Unit Testing the application - 
  
  The app can be tested by running
  
@@ -33,7 +33,7 @@ the feedback, the user simply shakes the phone.
     
  which runs the unit tests defined at <root>/tests/unit.
  
-  ## UI/Layout Testing the application - 
+## UI/Layout Testing the application - 
   
   To perform end to end layout testing, you would need to install the following pre-requisites
   * Appium (npm install -g appium)
