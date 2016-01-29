@@ -50,4 +50,7 @@ the feedback, the user simply shakes the phone.
   
     $ node_modules/protractor/bin/protractor tests/protractorlocal.config.js
   
+  ## CodePush
+  Use the CodePush CLI @ https://microsoft.github.io/code-push/docs/getting-started.html and register your app for code-push.  You need to create a deploymentkey for
+  the platform you are targetting and add it to your config.xml
     

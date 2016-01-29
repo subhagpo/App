@@ -29,8 +29,5 @@
     "cordova-plugin-whitelist",
     "cordova-plugin-splashscreen",
     "com.ionic.keyboard"
-  ],
-  "scripts": {
-    "start": "node start.js"
-  }
+  ]
 }

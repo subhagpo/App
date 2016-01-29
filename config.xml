@@ -29,6 +29,7 @@
     <preference name="SuppressesIncrementalRendering" value="True" />
     <preference name="orientation" value="portrait" />
     <platform name="ios">
+        <preference name="CodePushDeploymentKey" value="[iOS CODEPUSH deployment KEY]"/>
         <icon height="57" src="resources/ios/icon/icon.png" width="57" />
         <icon height="114" src="resources/ios/icon/icon@2x.png" width="114" />
         <icon height="40" src="resources/ios/icon/icon-40.png" width="40" />
@@ -54,6 +55,7 @@
         <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
     </platform>
     <platform name="android">
+        <preference name="CodePushDeploymentKey" value="[Android CODEPUSH deployment KEY]"/>
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
         <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
