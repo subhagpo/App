@@ -152,7 +152,9 @@ angular.module('starter.controllers', [])
     $scope.submitSurvey = function() {
         // Simulate app crash
         hockeyapp.forceCrash();
+        
         /*
+        // Actual fix :: Good code!!
         var send={};
 
         for(var i = 0; i < $scope.questions.length; i++) {
